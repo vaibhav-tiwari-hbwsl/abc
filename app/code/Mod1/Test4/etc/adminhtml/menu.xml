@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+    <menu>
+        <add id="Mod1_Test4::helloworld" title="Hello World" module="Mod1_Test4" sortOrder="51" resource="Mod1_Test4::helloworld"/>
+        <add id="Mod1_Test4::post" title="Manage Posts" module="Mod1_Test4" sortOrder="10" action="mageplaza_helloworld/post" resource="Mod1_Test4::post" parent="Mod1_Test4::helloworld"/>
+        <add id="Mod1_Test4::hello_configuration" title="Configuration" module="Mod1_Test4" sortOrder="99" parent="Mod1_Test4::helloworld" action="adminhtml/system_config/edit/section/helloworld" resource="Mod1_Test4::helloworld_configuration"/>
+    </menu>
+</config>
